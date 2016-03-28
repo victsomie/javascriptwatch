@@ -1,0 +1,32 @@
+<html>
+<head>
+    <style>
+        p{
+            font-size: 2em;
+            direction:ltr;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <p id="hello"></p>
+    <script>
+        
+        var n = prompt("What is your name");
+        var x = "Am only saying hello!";
+        
+        if (n != null){
+            document.getElementById("hello").innerHTML= "Hi " + n + " " + x ;
+        }   
+        
+        /*======Rounding to specific decimal places======*/
+        document.write("Round 10 to two decimal ", (10).toFixed(4), "<br/>");
+        
+        /*======Math Operator=========*/
+        document.write("3 + 5 = ", (3 + 2*5));
+        
+        
+    </script>
+</body>
+</html>
