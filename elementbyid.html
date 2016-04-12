@@ -58,11 +58,23 @@
         
         document.write("str.replace(\"long\", \"crazy\")", str.replace("long",  "crazy"),  "<br />"); 
         /*Left at 16:50 minutes */
-        document.write("str.split(\"long\", \"crazy\")", str.split(" ,"),  "<br />");
+        document.write("str.split(\"long\", \"crazy\")", str.split(" ,"),  "<br />"); 
         
 //        how to do styling/
         var strToStyle  = "Another line of text"  ;
         document.write("Font color : ", strToStyle.fontcolor("red"), "<br>")
+        
+        
+        /*======using the == and === operator====*/
+        var j =10;
+        
+        if(j>1010){
+            document.write("j == 10 gives you : ", j==10, "<br />"); 
+        }else if(j<=10){
+            document.write("j === \"10\" gives you : ", j==="10", "<br />");
+        }else{
+            document.write("No content here", j===10);
+        }
         
         
         
