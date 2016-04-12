@@ -44,7 +44,7 @@
         document.write("Math.max(10,5) = ", Math.max(10,5), "<br />");
         document.write("Math.por(4,2) = ", Math.pow(4,2), "<br />");
         
-        var str = "This is a line one a long sentense!";
+        var str = "This is a line one ,a long sentense!";
         
         document.write("Length of string 'str' is ", str.length, "<br />");        
         document.write("Index of string \"long\" is ", str.indexOf("long"), "<br />");
@@ -58,6 +58,15 @@
         
         document.write("str.replace(\"long\", \"crazy\")", str.replace("long",  "crazy"),  "<br />"); 
         /*Left at 16:50 minutes */
+        document.write("str.split(\"long\", \"crazy\")", str.split(" ,"),  "<br />");
+        
+//        how to do styling/
+        var strToStyle  = "Another line of text"  ;
+        document.write("Font color : ", strToStyle.fontcolor("red"), "<br>")
+        
+        
+        
+        
         
     </script>
 </body>
