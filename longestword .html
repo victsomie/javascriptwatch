@@ -1,0 +1,29 @@
+<html>
+
+
+
+
+<script>
+    function longestWord(givenWord) {
+
+        var yourArray = givenWord.split(" ");
+
+        var lengthCount = 0;
+        var word = "";
+        for (l = 0; l < yourArray.length; l++) {
+            if (yourArray[l].length > lengthCount) {
+
+                lengthCount = yourArray[l].length
+                word = yourArray[l];
+            }
+
+            //return word;
+        }
+        console.log(word);
+    }
+    var g = prompt("Enter any kind of sentence! ");
+    longestWord(g);
+    //    longestWord("given is abit tricky here");
+</script>
+
+</html>

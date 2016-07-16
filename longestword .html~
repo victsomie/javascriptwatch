@@ -1,0 +1,28 @@
+<html>
+
+
+<script>
+
+
+function longestWord(givenWord)
+
+var yourArray = givenWord.split(" ");
+
+
+
+var lengthCount = 0;
+var word = "";
+for(l = 0, l < yourArray.length; l++){
+  if (yourArray[l].length >lengthCount){
+
+      length = yourArray[l].length
+      word = yourArray[l];
+  }
+
+  return word;
+}
+
+</script>
+
+</html>
+
