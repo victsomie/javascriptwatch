@@ -1,114 +1,112 @@
 <html>
+
 <head>
 
-    
-    
-    
+
+
+
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-        <style>
-        p{
+    <style>
+        p {
             font-size: 2em;
-            direction:ltr;
+            direction: ltr;
         }
-           body, h1, h2, h3, p{
-                font-family: 'Oswald', sans-serif;
-            } 
-            
-            .mine{
-                font-weight:
-            }
-            
-            
-            
-            
+
+        body,
+        h1,
+        h2,
+        h3,
+        p {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .mine {
+            font-weight:
+        }
     </style>
-    
-    
-    
+
+
+
 </head>
+
 <body>
     <div>some text here
         <h1 class="mine">This is some test of fonts</h1>
         <h2 class="mine">This is some test of fonts</h2>
         <h3 class="mine">This is some test of fonts</h3>
         <p class="mine">This is some test of fonts</p>
-    
-    
+
+
     </div>
-    
-    
-    
-    
+
+
+
+
     <p id="hello"></p>
     <script>
-        
         var n = prompt("What is your name");
         var x = "Am only saying hello!";
-        
-        if (n != null){
-            document.getElementById("hello").innerHTML= "Hi " + n + " " + x ;
-        }   
-        
+
+        if (n != null) {
+            document.getElementById("hello").innerHTML = "Hi " + n + " " + x;
+        }
+
         /*======Rounding to specific decimal places======*/
         document.write("Round 10 to two decimal ", (10).toFixed(4), "<br/>");
-        
+
         /*======Math Operator=========*/
-        document.write("3 + 5 = ", (3 + 2*5), "<br />");
+        document.write("3 + 5 = ", (3 + 2 * 5), "<br />");
         document.write("String to number ", Number("3.14"), "<br />");
         document.write("String to integer ", parseInt("3.14"), "<br />");
-        
-        
+
+
         document.write("Math.abs(-8) = ", Math.abs(-8), "<br />");
         document.write("Math.cbrt(1000) = ", Math.cbrt(1000), "<br />");
         document.write("Math.sqrt(1000) = ", Math.sqrt(1000), "<br />");
-        
+
         document.write("Math.ceil(6.45) = ", Math.ceil(6.45), "<br />");
         document.write("Math.floor(6.45) = ", Math.floor(6.45), "<br />");
-        document.write("Math.floor(6.45) = ", Math.round(6.45), "<br />");
-        
+        document.write("Math.round(6.45) = ", Math.round(6.45), "<br />");
+
         document.write("Math.log(10) = ", Math.log(10), "<br />");
         document.write("Math.log10(10) = ", Math.log10(10), "<br />");
-        
-        document.write("Math.min(10,5) = ", Math.min(10,5), "<br />");
-        document.write("Math.max(10,5) = ", Math.max(10,5), "<br />");
-        document.write("Math.por(4,2) = ", Math.pow(4,2), "<br />");
-        
+
+        document.write("Math.min(10,5) = ", Math.min(10, 5), "<br />");
+        document.write("Math.max(10,5) = ", Math.max(10, 5), "<br />");
+        document.write("Math.pow(4,2) = ", Math.pow(4, 2), "<br />");
+
         var str = "This is a line one ,a long sentense!";
-        
-        document.write("Length of string 'str' is ", str.length, "<br />");        
+
+        document.write("Length of string 'str' is ", str.length, "<br />");
         document.write("Index of string \"long\" is ", str.indexOf("long"), "<br />");
-        
-        
-        document.write("str.slice(19, 23) = ", str.slice(19, 27) + "<br />");        
-        document.write("str.slice(19, 23) = ", str.slice(19) + "<br />"); 
-        
-        
-        document.write("str.substr(19,4)", str.substr(19,4),  "<br />"); 
-        
-        document.write("str.replace(\"long\", \"crazy\")", str.replace("long",  "crazy"),  "<br />"); 
+
+
+        document.write("str.slice(19, 23) = ", str.slice(19, 27) + "<br />");
+        document.write("str.slice(19, 23) = ", str.slice(19) + "<br />");
+
+
+        document.write("str.substr(19,4)", str.substr(19, 4), "<br />");
+
+        document.write("str.replace(\"long\", \"crazy\")", str.replace("long", "crazy"), "<br />");
         /*Left at 16:50 minutes */
-        document.write("str.split(\"long\", \"crazy\")", str.split(" ,"),  "<br />"); 
-        
-//        how to do styling/
-        var strToStyle  = "Another line of text"  ;
+        document.write("str.split(\"long\", \"crazy\")", str.split(" ,"), "<br />");
+
+        //        how to do styling/
+        var strToStyle = "Another line of text";
         document.write("Font color : ", strToStyle.fontcolor("red"), "<br>")
-        
-        
+
+
         /*======using the == and === operator====*/
-        var j =10;
-        
-        if(j>1010){
-            document.write("j == 10 gives you : ", j==10, "<br />"); 
-        }else if(j<=10){
-            document.write("j === \"10\" gives you : ", j==="10", "<br />");
-        }else{
-            document.write("No content here", j===10);
+        var j = 10;
+
+        if (j > 1010) {
+            document.write("j == 10 gives you : ", j == 10, "<br />");
+        } else if (j <= 10) {
+            document.write("j === \"10\" gives you : ", j === "10", "<br />");
+        } else {
+            document.write("No content here", j === 10);
         }
-        
-        
-        
-        
-        
     </script>
 </body>
+
 </html>
